@@ -2,6 +2,7 @@
 
 body{
     background-color: var(--color-3);
+    font-family: 'Poppins Normal';
 }
 
 
@@ -245,17 +246,51 @@ body{
 }
 
 
-
+/**_____footer______*/
 
 .footer {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-2);
 }
 .footer__section {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-around;
+
 }
 .article__footer {
+    display: flex;
+    flex-direction: column;
 }
-.bar__footer {
+
+.article__footer :first-child{
+    font-size: 30px;
 }
-.circles {
+
+.article__footer h2{
+    font-size: 25px;
+    margin: 10px;
 }
-.circle {
+
+.bar__footer{
+    width: 5vw;
+    height: 2px;
+    background-color: var(--color-1);
+}
+
+.circles{
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle{
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-1);
+    border-radius: 50%;
 }
