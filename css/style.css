@@ -3,6 +3,7 @@
 
 /*_____header_______*/
 
+
 .header__section {
     display: flex;
     justify-content: space-between;
@@ -14,6 +15,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     gap: 30px;
+    height: 30px;
     color: var(--color-2);
 
 }
@@ -26,12 +28,13 @@
 
 body{
     background-color: var(--color-3);
+    font-family: 'Poppins Normal', sans-serif;
 }
 
 .main__section {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 .text__section {
     display: flex;
@@ -39,7 +42,6 @@ body{
 }
 .text__section h2{
     font-size: 80px;
-    font-family: 'Poppins', sans-serif;
     color: var(--color-1);
 }
 .text__section p {
@@ -61,8 +63,8 @@ body{
 /*______section 2_______*/
 
 .main__section_2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -101,8 +103,8 @@ body{
 /*____third section____-*/
 
 .main__section_3 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -127,6 +129,7 @@ body{
 
 .content__grid_menu {
     background-color: var(--color-2);
+    border: 7px solid var(--color-4);
     display: flex;
     flex-direction: column;
     width: 20vw;
@@ -152,8 +155,8 @@ body{
 
 
 .main__section_4 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -199,8 +202,8 @@ body{
 
 
 .main__section_5 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,6 +215,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: var(--color-2);
+    border: 7px solid var(--color-4);
     text-align: center;
     align-items: center;
     padding: 20px;
@@ -238,8 +242,48 @@ body{
 
 
 .footer {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    color: var(--color-2);
+
 }
 .footer__section {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    justify-content: space-around;
+
 }
 .article__footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.article__footer :first-child{
+    font-size: 40px;
+}
+
+.article__footer h2{
+    font-size: 35px;
+    margin: 10px;
+}
+
+.bar__footer{
+    width: 5vw;
+    height: 2px;
+    background-color: var(--color-1);
+}
+
+.circles{
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-1);
+    border-radius: 50%;
 }
