@@ -97,7 +97,8 @@ body{
     color: var(--color-2);
     border: 0;
 }
-
+ 
+/*____third section____-*/
 
 .main__section_3 {
     margin-top: 20px;
@@ -145,4 +146,100 @@ body{
     font-size: 25px;
     margin: 5px;
     color: var(--color-1);
+}
+
+/*_____section 4_____*/
+
+
+.main__section_4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.text__section_4 span {
+    color: var(--color-1);
+    font-size: 20px;
+}
+.text__section_4 h2{
+    font-size: 60px;
+    color: var(--color-2);
+    margin-top: 15px;
+    margin-bottom: 70px;
+}
+
+.grid__section_services {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto;
+}
+
+.content__grid_services {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+
+.content__grid_services h4{
+    font-size: 30px;
+    margin: 5px;
+    color: var(--color-1);
+}
+
+.content__grid_services p{
+    font-size: 25px;
+    margin: 5px;
+    color: var(--color-2);
+}
+
+
+/*_____section 5_____*/
+
+
+.main__section_5 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article__section_5{
+    width: 85vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-2);
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main__section_5 h1{
+    font-size: 80px;
+    margin: 50px;
+    width: 50vw;
+}
+
+.main__section_5 button{
+    color: var(--color-2);
+    background-color: var(--color-1);
+    width: 12vw;
+    height: 5vh;
+    font-size: 30px;
+    border: 0;
+}
+
+
+/*____footer___*/
+
+
+
+.footer {
+}
+.footer__section {
+}
+.article__footer {
 }
