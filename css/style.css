@@ -26,6 +26,13 @@
     display: flex;
     flex-direction: column;
 }
-.star__section {
+.text__section h1{
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+.text__section button{
     
+}
+.star__section {
+
 }
