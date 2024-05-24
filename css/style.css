@@ -9,13 +9,13 @@
     justify-content: space-between;
     padding: 0px 15px;
     color: var(--color-1);
-    font-size: 25px;
+    font-size: 15px;
 }
 .article__section {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     gap: 30px;
-    height: 30px;
+    height: 20px;
     color: var(--color-2);
 
 }
@@ -29,11 +29,12 @@
 body{
     background-color: var(--color-3);
     font-family: 'Poppins Normal', sans-serif;
+    padding: var(--space-lr);
 }
 
 .main__section {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: 60px;
 }
 .text__section {
@@ -51,7 +52,7 @@ body{
 }
 
 .text__section button{
-    font-size: medium;
+    font-size: small;
     margin-top: 10px;
     width: 8vw;
     height: 4vh;
@@ -211,7 +212,7 @@ body{
 
 .article__section_5{
     width: 85vw;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     background-color: var(--color-2);
@@ -222,7 +223,7 @@ body{
 }
 
 .main__section_5 h1{
-    font-size: 80px;
+    font-size: 70px;
     margin: 50px;
     width: 50vw;
 }
@@ -230,8 +231,8 @@ body{
 .main__section_5 button{
     color: var(--color-2);
     background-color: var(--color-1);
-    width: 12vw;
-    height: 5vh;
+    width: 15vw;
+    height: 6vh;
     font-size: 30px;
     border: 0;
 }
@@ -262,11 +263,11 @@ body{
 }
 
 .article__footer :first-child{
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .article__footer h2{
-    font-size: 35px;
+    font-size: 30px;
     margin: 10px;
 }
 
@@ -278,12 +279,89 @@ body{
 
 .circles{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .circle{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
     background-color: var(--color-1);
     border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .header__section{
+        font-size: 10px;
+    }
+    .text__section button{
+        width: 30vw;
+        height: 5vh;
+    }
+    .article__section {
+        grid-template-columns: repeat(auto-fit);
+    }
+    .main__section img{
+        margin-top: 15px;
+        width: 98%;
+        justify-self: center;
+    }
+    .text__section{
+        text-align: center;
+        align-items: center;
+    }
+    .main__section_2 img{
+        width: 98%;
+        justify-self: center;
+    }
+    .main__section, .main__section_2, .main__section_3, .main__section_4 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text__section h2, .text__section_2 h2, .text__section_3 h2, .text__section_4 h2 {
+        font-size: 40px;
+    }
+    .text__section p, .text__section_2 p, .content__grid_menu h4, .content__grid_menu h5, .content__grid_menu span, .content__grid_services h4, .content__grid_services p {
+        font-size: 20px;
+    }
+    .text__section_2{
+        text-align: center;
+        align-items: center;
+        width: 60vw;
+    }
+    .text__section_2 span{
+        font-size: 20px;
+    }
+    .text__section_2 button{
+        width: 30vw;
+        height: 5vh;
+    }
+    .grid__section_menu, .grid__section_services {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+    }
+    .content__grid_menu, .content__grid_services {
+        width: 80vw;
+    }
+    .article__section_5{
+        height: 40vh;
+    }
+    .main__section_5 h1 {
+        font-size: 40px;
+        width: 80vw;
+    }
+    .main__section_5 button {
+        width: 40vw;
+        font-size: 20px;
+    }
+    .footer__section {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+    }
+    .bar__footer{
+        width: 10vw;
+    }
+    .article__footer :first-child, .article__footer h2 {
+        font-size: 20px;
+    }
 }
